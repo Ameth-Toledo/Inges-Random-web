@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.temporizador {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a90e2; 
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.reloj {
+    font-family: "Orbitron", sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.comenzar-btn {
+    width: 310px;
+    height: 50px;
+    background-color: #4a90e2;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.comenzar-btn:hover {
+    background-color: #007acc;
+}
+
+.detener-btn {
+    width: 150px;
+    height: 50px;
+    background-color: #f42525;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.detener-btn:hover {
+    background-color: #c02020; 
+}
+
+.reanudar-btn {
+    width: 150px;
+    height: 50px;
+    background-color: #faa615;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.reanudar-btn:hover {
+    background-color: #d69e0f;;
+}
+
+.control-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+/*Alerta push*/
+
+.alert-push {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+    transition: opacity 0.5s ease;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}

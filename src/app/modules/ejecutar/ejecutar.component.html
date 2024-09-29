@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<button class="btn-ejecutar" (click)="ejecutar()">
+    <i class="fas fa-play"></i>Ejecutar
+</button>
+
+<div class="container-cards">
+    <app-card-equipos equipo="'Equipo 1'" [estudiantes]="equipo1"></app-card-equipos>
+    
+    <div class="temporizador-wrapper">
+        <h1 class="instruccion">Tendrás 3 minutos para responder</h1>
+        <app-temporizador></app-temporizador>
+        
+        <div class="enjuego">
+            <app-card-enjuego [student1]="selectedStudent1" [student2]="selectedStudent2"></app-card-enjuego>
+        </div>
+    </div>
+
+    <app-card-equipos equipo="'Equipo 2'" [estudiantes]="equipo2"></app-card-equipos>
+</div>
+
+
+
+<app-card-seleccion [participatedStudents]="participatedStudents"></app-card-seleccion>
+<app-card-ganador></app-card-ganador>
+<app-footer></app-footer>

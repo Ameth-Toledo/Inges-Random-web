@@ -1,0 +1,22 @@
+<div class="card-ganador">
+    <h1 class="titulo-ganador">Por favor, marca al ganador</h1>
+    <div class="opciones-ganador">
+        <input 
+            type="checkbox" 
+            id="equipo1-ganador" 
+            [checked]="equipo1Seleccionado" 
+            (change)="seleccionarGanador('equipo1')"
+        >
+        <label for="equipo1-ganador">Equipo 1</label>
+
+        <input 
+            type="checkbox" 
+            id="equipo2-ganador" 
+            [checked]="equipo2Seleccionado" 
+            (change)="seleccionarGanador('equipo2')"
+        >
+        <label for="equipo2-ganador">Equipo 2</label>
+
+        <button class="confirmar-ganador" (click)="confirmarGanador()">Confirmar</button>
+    </div>
+</div>

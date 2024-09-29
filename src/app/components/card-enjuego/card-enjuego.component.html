@@ -1,0 +1,11 @@
+<div class="card-enjuego">
+    <h3 class="titulo-enjuego">Seleccionados en Juego</h3>
+    <p class="jugadores-enjuego" *ngIf="student1 && student2">
+      <strong class="equipo-enjuego">Equipo 1:</strong> {{ student1 }}<br>
+      <strong class="equipo-enjuego">Equipo 2:</strong> {{ student2 }}
+    </p>
+    <p class="no-seleccionado-enjuego" *ngIf="!student1 || !student2">
+      No se han seleccionado jugadores aún.
+    </p>
+  </div>
+  

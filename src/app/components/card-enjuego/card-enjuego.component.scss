@@ -1,0 +1,51 @@
+.card-enjuego {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .titulo-enjuego {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .jugadores-enjuego {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .equipo-enjuego {
+    color: #ff6600; 
+    font-weight: 600;
+  }
+  
+  .no-seleccionado-enjuego {
+    font-size: 16px;
+    color: #888;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .jugadores-enjuego strong {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .card-enjuego {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card-enjuego:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  

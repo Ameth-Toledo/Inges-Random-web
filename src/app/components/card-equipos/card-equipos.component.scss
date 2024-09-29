@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@100..900&display=swap');
+
+.card-equipos {
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.name-equipo {
+    font-family: "Lexend", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.lista-alumnos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.names-equipo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    color: #555;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.names-equipo:last-child {
+    border-bottom: none;
+}
+
+.names-equipo:hover {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.names-equipo i, .name-equipo i {
+    font-size: 24px; 
+    color: #007BFF; 
+}

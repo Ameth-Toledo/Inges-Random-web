@@ -1,0 +1,97 @@
+.footer-class-footer {
+    background-color: #4a90e2;
+    padding: 50px 20px;
+    color: #ffffff;
+    border-top: 3px solid #00aaff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.footer-section-footer {
+    flex: 1;
+    min-width: 220px;
+    margin-bottom: 40px;
+}
+
+.footer-heading-footer {
+    font-family: "Merriweather", serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.about-footer .footer-text-footer {
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #f0f0f0;
+    margin: 0;
+}
+
+.subscribe-form-footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.subscribe-input-footer {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 240px;
+    font-family: "Merriweather", serif;
+}
+
+.subscribe-button-footer {
+    background-color: #00aaff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button-footer:hover {
+    background-color: #007acc;
+}
+
+.footer-icons-footer {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.icon-link-footer {
+    color: #ffffff;
+    font-size: 26px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-link-footer:hover {
+    color: #00aaff;
+    transform: scale(1.1); 
+}
+
+.footer-bottom-footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom-text-footer {
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+    color: #f0f0f0;
+}

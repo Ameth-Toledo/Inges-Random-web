@@ -1,0 +1,18 @@
+<div class="card-seleccionados">
+    <div class="seleccionado-equipo-1">
+        <h1 class="equipo-1">Equipo 1</h1>
+        <ul class="ul-seleccion">
+            <li *ngFor="let student of participatedStudents.equipo1" class="li-seleccion">
+                <i class="fas fa-user"></i> {{ student }}
+            </li>
+        </ul>
+    </div>
+    <div class="seleccionado-equipo-2">
+        <h1 class="equipo-2">Equipo 2</h1>
+        <ul class="ul-seleccion">
+            <li *ngFor="let student of participatedStudents.equipo2" class="li-seleccion">
+                <i class="fas fa-user"></i> {{ student }}
+            </li>
+        </ul>
+    </div>
+</div>

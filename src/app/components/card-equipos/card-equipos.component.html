@@ -1,0 +1,12 @@
+<div class="card-equipos">
+    <h2 class="name-equipo">
+        <i class="fas fa-users">{{ equipo }}</i>
+    </h2>
+    <ul class="lista-alumnos">
+      <li *ngFor="let alumno of estudiantes" class="names-equipo">
+        <i class="fas fa-user"></i>
+        {{ alumno.names }}
+      </li>
+    </ul>
+  </div>
+  

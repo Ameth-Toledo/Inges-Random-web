@@ -1,0 +1,54 @@
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    position: relative;
+}
+
+app-card-equipos {
+    flex: 1;
+    max-width: 45%;
+    min-width: 300px;
+}
+
+.temporizador-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 20px; 
+}
+
+.instruccion {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-ejecutar {
+    background-color: #49df56;
+    width: 300px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn-ejecutar i {
+    margin-right: 10px;
+}
+
+.enjuego {
+    margin-top: 20px;
+    padding: 15px;
+    width: 150%;
+    text-align: center;
+}
