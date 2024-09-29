@@ -1,18 +1,28 @@
-<div class="card-seleccionados">
-    <div class="seleccionado-equipo-1">
-        <h1 class="equipo-1">Equipo 1</h1>
-        <ul class="ul-seleccion">
-            <li *ngFor="let student of participatedStudents.equipo1" class="li-seleccion">
+<div class="card-seleccionados-seleccion">
+    <div class="seleccionado-equipo-1-seleccion" [ngClass]="{'ganador': selectedWinner === 'equipo1', 'perdedor': selectedWinner === 'equipo2'}">
+        <h1 class="equipo-1-seleccion">Equipo 1</h1>
+        <ul class="ul-seleccion-seleccion">
+            <li *ngFor="let student of participatedStudents.equipo1" class="li-seleccion-seleccion">
                 <i class="fas fa-user"></i> {{ student }}
             </li>
         </ul>
     </div>
-    <div class="seleccionado-equipo-2">
-        <h1 class="equipo-2">Equipo 2</h1>
-        <ul class="ul-seleccion">
-            <li *ngFor="let student of participatedStudents.equipo2" class="li-seleccion">
+    <div class="seleccionado-equipo-2-seleccion" [ngClass]="{'ganador': selectedWinner === 'equipo2', 'perdedor': selectedWinner === 'equipo1'}">
+        <h1 class="equipo-2-seleccion">Equipo 2</h1>
+        <ul class="ul-seleccion-seleccion">
+            <li *ngFor="let student of participatedStudents.equipo2" class="li-seleccion-seleccion">
                 <i class="fas fa-user"></i> {{ student }}
             </li>
         </ul>
     </div>
+
+    <fieldset class="ganador-selector-seleccion">
+        <legend>¿Quién ganó?</legend>
+        <label>
+            <input type="radio" name="ganador" value="equipo1" (change)="selectWinner('equipo1')"> Equipo 1
+        </label>
+        <label>
+            <input type="radio" name="ganador" value="equipo2" (change)="selectWinner('equipo2')"> Equipo 2
+        </label>
+    </fieldset>
 </div>

@@ -1,54 +1,109 @@
-.card-seleccionados {
+.card-seleccionados-seleccion {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
 }
 
-.seleccionado-equipo-1, .seleccionado-equipo-2 {
-    flex: 1;
+.seleccionado-equipo-1-seleccion, .seleccionado-equipo-2-seleccion {
+    width: 100%;
     text-align: center;
     padding: 10px;
 }
 
-.equipo-1, .equipo-2 {
+.equipo-1-seleccion, .equipo-2-seleccion {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 34px;
     color: #333;
     margin-bottom: 10px;
 }
 
-.ul-seleccion {
+.ul-seleccion-seleccion {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-.li-seleccion {
+.li-seleccion-seleccion {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     color: #666;
     display: flex;
     align-items: center;
-    gap: 10px; /* Espacio entre el ícono y el nombre */
+    gap: 10px;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 i.fas.fa-user {
-    color: #666; /* Color del ícono */
-    font-size: 20px; /* Tamaño del ícono */
+    color: #666;
+    font-size: 20px;
 }
 
-.seleccionado-equipo-1 {
-    border-right: 2px solid #ddd;
+.ganador-selector-seleccion {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
 
-.card-seleccionados:hover {
+.ganador-selector-seleccion legend {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.ganador-selector-seleccion label {
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ganador-selector-seleccion input[type="radio"] {
+    margin-right: 5px;
+}
+
+.card-seleccionados-seleccion:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     background-color: #e9ecef;
 }
+
+.seleccionado-equipo-1-seleccion {
+    border-bottom: 2px solid #ddd;
+}
+
+@media (min-width: 768px) {
+    .card-seleccionados-seleccion {
+        flex-direction: row;
+    }
+
+    .seleccionado-equipo-1-seleccion, .seleccionado-equipo-2-seleccion {
+        flex: 1;
+    }
+
+    .seleccionado-equipo-1-seleccion {
+        border-right: 2px solid #ddd;
+        border-bottom: none;
+    }
+}
+
+.ganador {
+    background-color: rgba(95, 244, 95, 0.6); 
+    color: white;
+    padding: 10px; 
+    border-radius: 8px; 
+}
+
+.perdedor {
+    background-color: rgba(245, 76, 76, 0.6); 
+    color: white;
+    padding: 10px; 
+    border-radius: 8px; 
+}
+

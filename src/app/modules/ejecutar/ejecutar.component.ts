@@ -7,12 +7,12 @@ import { TemporizadorComponent } from "../../components/temporizador/temporizado
 import { CardSeleccionComponent } from "../../components/card-seleccion/card-seleccion.component";
 import Swal from 'sweetalert2';
 import { CardEnjuegoComponent } from "../../components/card-enjuego/card-enjuego.component";
-import { CardGanadorComponent } from "../../components/card-ganador/card-ganador.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-ejecutar',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, CardEquiposComponent, TemporizadorComponent, CardSeleccionComponent, CardEnjuegoComponent, CardGanadorComponent],
+  imports: [HeaderComponent, FooterComponent, CardEquiposComponent, TemporizadorComponent, CardSeleccionComponent, CardEnjuegoComponent, CommonModule],
   templateUrl: './ejecutar.component.html',
   styleUrl: './ejecutar.component.scss'
 })
@@ -52,6 +52,8 @@ export class EjecutarComponent {
   selectedStudent1: string | null = null;
   selectedStudent2: string | null = null;
   participatedStudents: { equipo1: string[], equipo2: string[] } = { equipo1: [], equipo2: [] };
+
+  equipoGanador : string | null = null;
 
   searchText : string = '';
   filteredStudents : string [] = [];
